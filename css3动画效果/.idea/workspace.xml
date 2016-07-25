@@ -34,7 +34,7 @@
       <file leaf-file-name="transition过渡效果.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/transition过渡效果.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9306759">
+            <state vertical-scroll-proportion="1.3466204">
               <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
               <folding />
             </state>
@@ -115,7 +115,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../css3动画应用-音乐唱片旋转播放特效" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -260,7 +260,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/transition过渡效果.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9306759">
+        <state vertical-scroll-proportion="1.3466204">
           <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
           <folding />
         </state>
