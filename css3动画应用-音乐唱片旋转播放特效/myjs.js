@@ -10,8 +10,8 @@ window.onload=function(){
     var audio = document.getElementsByTagName("audio")[0];
     //当音乐播放完停止时，自动停止图片旋转
     audio.addEventListener("ended",function(event){
-        xuanzhuan.setAttribute("id","");
-        //xuanzhuan.style.animationPlayState = "paused";
+        //xuanzhuan.setAttribute("id","");
+        xuanzhuan.style.animationPlayState = "paused";
     },false);
     //点击暂停播放时，音乐暂停，图片停止旋转
     icon1.onclick=function(){
