@@ -8,7 +8,7 @@
             margin: 0px;
             padding: 0px;
         }
-        .box{
+        #box{
             width: 200px;
             height: 200px;
             background-color: chocolate;
@@ -39,9 +39,44 @@
             margin-right: 0px;
         }
     </style>
+    <script>
+        window.onload=function(){
+            var e1 = document.getElementById("e1");
+            var e2 = document.getElementById("e2");
+            var e3 = document.getElementById("e3");
+            var e4 = document.getElementById("e4");
+            var e5 = document.getElementById("e5");
+            var box = document.getElementById("box");
+            e1.onclick=function(){
+                box.style.transitionTimingFunction = "ease";
+                box.style.top=300+"px";
+                box.style.left=1000+"px";
+            };
+            e2.onclick=function(){
+                box.style.transitionTimingFunction = "liner";
+                box.style.top=100+"px";
+                box.style.left=200+"px";
+            };
+            e3.onclick=function(){
+                box.style.transitionTimingFunction = "ease-in";
+                box.style.top=200+"px";
+                box.style.left=800+"px";
+            };
+            e4.onclick=function(){
+                box.style.transitionTimingFunction = "ease-out";
+                box.style.top=300+"px";
+                box.style.left=100+"px";
+            };
+            e5.onclick=function(){
+                box.style.transitionTimingFunction = "ease-in-out";
+                box.style.top=100+"px";
+                box.style.left=800+"px";
+            };
+        }
+    </script>
 </head>
 <body>
-    <div class="box"></div>
+    <div id="box"></div>
     <br>
     <br>
     <br>
