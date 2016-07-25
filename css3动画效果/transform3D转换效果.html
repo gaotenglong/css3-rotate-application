@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform3D转换效果</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            perspective:800px;
+            perspective-origin:50% 50%;
+            transform-style: preserve-3d;
+            transform-origin:0% 100%;//以Y轴为旋转中心
+        }
+        p{
+            margin:20px 520px;
+        }
+        .btn{
+            width: 300px;
+            margin: 0 auto;
+            border: 2px solid #e3e3e3;
+            border-radius: 5px;
+            padding: 10px;
+
+        }
+        .btn button{
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 20px;
+        }
+        button:last-child{
+            margin-right: 0px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var tx = document.getElementById("tx");
+            var ty = document.getElementById("ty");
+            var tz = document.getElementById("tz");
+            var rx = document.getElementById("rx");
+            var ry = document.getElementById("ry");
+            var rz = document.getElementById("rz");
+            var box = document.getElementById("box");
+            tx.onclick=function(){
+                box.style.transform = "translateX(500px)";
+            };
+            ty.onclick=function(){
+                box.style.transform = "translateY(400px)"
+            };
+            rx.onclick=function(){
+                box.style.transform = "rotateX(30deg)"
+            };
+            ry.onclick=function(){
+                box.style.transform = "rotateY(30deg)"
+            };
+            rz.onclick=function(){
+                box.style.transform = "rotateZ(30deg)"
+            };
+        }
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <p>translate(移动距离)</p>
+    <div class="btn">
+        <button id="tx">translateX</button>
+        <button id="ty">translateY</button>
+    </div>
+    <p>rotate(旋转角度)</p>
+    <div class="btn">
+        <button id="rx">rotateX</button>
+        <button id="ry">rotateY</button>
+        <button id="rz">rotateZ</button>
+    </div>
+</body>
+</html>

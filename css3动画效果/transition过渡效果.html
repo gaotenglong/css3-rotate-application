@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition过渡效果</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            transition: top 5s ease,left 5s ease ;
+            -moz-transition: top 5s ease,left 5s ease ; /* Firefox 4 */
+            -webkit-transition: top 5s ease,left 5s ease ; /* Safari and Chrome */
+            -o-transition: top 5s ease,left 5s ease ; /* Opera */
+        }
+        .btn{
+            width: 512px;
+            margin: 0 auto;
+            border: 2px solid #e3e3e3;
+            border-radius: 5px;
+            padding: 10px;
+
+        }
+        .btn button{
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 20px;
+        }
+        button:last-child{
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <div class="btn">
+        <button id="e1">ease</button>
+        <button id="e2">liner</button>
+        <button id="e3">ease-in</button>
+        <button id="e4">ease-out</button>
+        <button id="e5">ease-in-out</button>
+    </div>
+</body>
+</html>
