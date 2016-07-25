@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .wrap{height:30px;overflow: hidden;position: absolute;top:30px;left: 100px;width: 100%}
+        p{margin:0;height: 30px;width: 100%}
+        .content p{
+            position: absolute;
+        }
+        @-webkit-keyframes anim1{
+            0% {top: 30px;opacity: 1}
+            50% {top: -30px;opacity: 1}
+            75% {top: -30px ;opacity: 0}
+            100%{top:30px;opacity: 0}
+        }
+        @-webkit-keyframes anim2{
+
+            0% {top: -30px;opacity: 0}
+            25% {top: 30px;opacity: 0}
+            50% {top: 30px;opacity: 1}
+            100%{top: -30px;opacity: 1}
+        }
+
+        .content p:nth-child(1){background-color: red;}
+        .content p:nth-child(2){background-color: yellow;}
+        .content p:nth-child(1){
+
+            -webkit-animation: anim1 3s linear infinite;
+        }
+
+        .content p:nth-child(2){
+
+            -webkit-animation: anim2 3s linear infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="content">
+        <p>第一行数据</p>
+        <p>第二行数据</p>
+    </div>
+</div>
+</body>
+</html>
